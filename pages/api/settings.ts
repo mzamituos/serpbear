@@ -89,13 +89,13 @@ const safeReadJSON = async (filePath: string, fallback: any): Promise<any> => {
 };
 
 export const getAppSettings = async () : Promise<SettingsType> => {
-   const screenshotAPIKey = process.env.SCREENSHOT_API || '69408-serpbear';
+   const screenshotAPIKey = process.env.SCREENSHOT_API || '69408-free-serp-tracker';
    const defaultSettings: SettingsType = {
       scraper_type: 'none',
       notification_interval: 'never',
       notification_email: '',
       notification_email_from: '',
-      notification_email_from_name: 'SerpBear',
+      notification_email_from_name: 'Free SERP Rank Tracker',
       smtp_server: '',
       smtp_port: '',
       smtp_username: '',
